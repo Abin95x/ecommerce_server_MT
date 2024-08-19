@@ -11,7 +11,7 @@ import wishlistRouter from './routes/wishlistRoute.js';
 // import orderRouter from './routes/orderRoute.js';
 dotenv.config()
 
-import {job} from '../server/config/cronjob.js'
+// import {job} from '../server/config/cronjob.js'
 
 app.use(express.json({ limit: "20mb" }))
 app.use(cors({
