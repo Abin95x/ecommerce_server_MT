@@ -10,6 +10,7 @@ import cartRouter from './routes/cartRoute.js';
 import wishlistRouter from './routes/wishlistRoute.js';
 // import orderRouter from './routes/orderRoute.js';
 dotenv.config()
+
 import {job} from '../server/config/cronjob.js'
 
 app.use(express.json({ limit: "20mb" }))

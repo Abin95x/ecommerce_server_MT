@@ -2,6 +2,7 @@ import cron from 'node-cron';
 import https from 'https';
 
 function pingServer() {
+    
     console.log('Pinging server to keep it alive...');
     
     const options = {
