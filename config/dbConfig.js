@@ -1,8 +1,11 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const dbconnect = () => {
   mongoose
-    .connect('mongodb+srv://abin:abin@cluster0.7tmlt.mongodb.net/ecommerce')
+    .connect(process.env.MONGO_URL)
     .then(() => {
       console.log("Database connected successfully");
     })
