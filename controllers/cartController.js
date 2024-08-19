@@ -56,7 +56,7 @@ export const getCart = async (req, res) => {
         }
 
         const cart = await Cart.findOne({ user: userId }).populate('product.productId');
-
+     
         if (!cart) {
             return res.status(404).json({ message: 'Cart not found' });
         }
@@ -90,7 +90,6 @@ export const updateQuantity = async (req, res) => {
 
         for (let i = 0; i < cart.product.length; i++) {
             const dbProductId = cart.product[i].productId.toString();
-            console.log(`Comparing cart productId: ${dbProductId} with request productId: ${productId}`);
             if (dbProductId === productId) {
                 itemIndex = i;
                 break;
