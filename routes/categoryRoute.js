@@ -8,7 +8,6 @@ import {
     getOneCategory
 } from '../controllers/categoryController.js'
 
-
 categoryRoute.post('/addcategory', sanitizeInput, auth, addCategory)
 categoryRoute.get('/getcategory', auth, getCategory)
 categoryRoute.get('/getonecategory', auth, getOneCategory)

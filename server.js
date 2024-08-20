@@ -8,7 +8,6 @@ import productRouter from './routes/productRoute.js';
 import categoryRouter from './routes/categoryRoute.js';
 import cartRouter from './routes/cartRoute.js';
 import wishlistRouter from './routes/wishlistRoute.js';
-// import orderRouter from './routes/orderRoute.js';
 dotenv.config()
 
 import {job} from './config/cronjob.js'
@@ -23,10 +22,8 @@ app.use(cors({
 app.use('/', userRouter)
 app.use('/products', productRouter)
 app.use('/cart', cartRouter)
-// app.use('/order',orderRouter)
 app.use('/category', categoryRouter)
 app.use('/wishlist', wishlistRouter)
-
 
 
 dbconnect()

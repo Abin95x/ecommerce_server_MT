@@ -15,6 +15,4 @@ wishlistRouter.post('/addtowishlist', auth, addProductToWishlist)
 wishlistRouter.put('/removefromwishlist', auth, removeProductFromWishlist)
 
 
-
-
 export default wishlistRouter

@@ -71,7 +71,6 @@ export const getCart = async (req, res) => {
 
 
 
-
 export const updateQuantity = async (req, res) => {
     try {
         const { id, productId, newQuantity } = req.body;

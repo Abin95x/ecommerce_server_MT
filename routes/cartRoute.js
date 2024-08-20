@@ -14,7 +14,4 @@ cartRouter.patch('/updatequantity', auth, updateQuantity)
 cartRouter.put('/removefromcart', auth, removeProduct)
 
 
-
-
-
 export default cartRouter
